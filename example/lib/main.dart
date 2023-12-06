@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_audio_output/flutter_audio_output.dart';
+import 'package:sariska_flutter_audio_output/flutter_audio_output.dart';
 import 'dart:async';
 import 'package:logger/logger.dart';
 
