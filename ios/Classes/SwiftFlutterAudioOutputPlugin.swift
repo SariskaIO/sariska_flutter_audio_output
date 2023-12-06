@@ -3,12 +3,14 @@ import UIKit
 import AVFoundation
 
 public class SwiftFlutterAudioOutputPlugin: NSObject, FlutterPlugin {
-  public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "flutter_audio_output", binaryMessenger: registrar.messenger())
-    let instance = SwiftFlutterAudioOutputPlugin()
-    registrar.addMethodCallDelegate(instance, channel: channel)
-    instance.channel = channel;
-  }
+    var channel: FlutterMethodChannel?
+    
+    public class func register(with registrar: FlutterPluginRegistrar) {
+            let channel = FlutterMethodChannel(name: "flutter_audio_output", binaryMessenger: registrar.messenger())
+        let instance = SwiftFlutterAudioOutputPlugin()
+        registrar.addMethodCallDelegate(instance, channel: channel)
+        instance.channel = channel
+        }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         if (call.method == "getCurrentOutput"){
