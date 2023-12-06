@@ -1,7 +1,7 @@
-name: flutter_audio_output
+name: sariska_flutter_audio_output
 description: A Flutter package flutter_audio_output is to adapt music output.
-version: 0.0.2
-homepage: https://github.com/itsmurphy/flutter_audio_output.git
+version: 0.0.1
+homepage: https://github.com/SariskaIO/sariska_flutter_audio_output
 
 environment:
   sdk: ">=2.17.1 <3.0.0"

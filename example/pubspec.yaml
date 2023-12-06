@@ -18,7 +18,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_audio_output:
+  sariska_flutter_audio_output:
     # When depending on this package from a real application you should use:
     #   flutter_audio_output: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
